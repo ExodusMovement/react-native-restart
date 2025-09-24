@@ -22,9 +22,6 @@
     "typescript": "tsc --noEmit",
     "lint": "eslint --ext .js,.ts,.tsx .",
     "prepare": "bob build && husky install",
-    "release": "dotenv release-it",
-    "example": "yarn --cwd Example",
-    "pods": "cd Example/ios && node -e \"process.exit(require('os').platform() === 'darwin')\" || pod install",
     "bootstrap": "yarn example && yarn && yarn pods && cp .env.example .env",
     "clean": "rm -rf node_modules coverage .env lib Example/node_modules Example/ios/Pods",
     "prepack": "bob build"
@@ -34,13 +31,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/avishayil/react-native-restart",
+  "repository": "https://github.com/ExodusMovement/react-native-restart",
   "author": "Avishay Bar <avishay.il@gmail.com> (https://github.com/avishayil)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/avishayil/react-native-restart/issues"
+    "url": "https://github.com/ExodusMovement/react-native-restart/issues"
   },
-  "homepage": "https://github.com/avishayil/react-native-restart#readme",
+  "homepage": "https://github.com/ExodusMovement/react-native-restart#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "17.4.2",
     "@react-native-community/eslint-config": "3.0.0",
